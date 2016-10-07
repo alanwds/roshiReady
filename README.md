@@ -27,3 +27,8 @@ My ideia is follow the steps bellow:
 * Start an script to download and install chef-client, clone the repo with the cookbooks
 
 * Let chef take care about all hard work.
+
+## How to run
+
+1 - Create the docker image
+
