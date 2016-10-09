@@ -1,4 +1,4 @@
-name "Rushi Server"
+name "rushi-server"
 description "Plug and play single rushi server"
 
 #Timezone config
@@ -14,8 +14,8 @@ default_attributes(
 )
 
 run_list(
-#Timezone
-#  "recipe[timezone-ii]",
+Timezone
+  "recipe[timezone-ii]",
 #Nginx
 #  "recipe[nginx::nginx]",
 )

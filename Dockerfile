@@ -11,7 +11,10 @@ RUN dpkg -i chef.deb && rm chef.deb
 RUN mkdir /opt/rushiReady
 
 #Download  all the source code from project
-RUN git clone git@github.com:alanwds/roshiReady.git /opt/rushiReady 
+RUN git clone https://github.com/alanwds/roshiReady.git /opt/rushiReady 
 
 #Run chef-client with the attributes json file with all the setup
 RUN chef-solo -c /opt/rushiReady/chef/config.rb -j /opt/rushiReady/chef/attributes.json 
+
+#Sleep infinity for debug (remove after everything works)
+RUN sleep infinity

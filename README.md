@@ -31,4 +31,20 @@ My ideia is follow the steps bellow:
 ## How to run
 
 1 - Create the docker image
+	docker build -t rushi-ready .
+
+2 - Check if the image has been created
+	docker images
+
+3 - Run the container exposing port 80 
+	docker run -p 80:80 -d rushi-ready 
+
+## Tips
+
+You can debug problems or testing the container getting into a shell
+	docker run -t -i -p 80:80 -d rushi-ready /bin/bash
+
+
+# Credits
+	Dockerfile example: https://hub.docker.com/r/dockerinpractice/docker-chef-solo-example/~/dockerfile/
 
