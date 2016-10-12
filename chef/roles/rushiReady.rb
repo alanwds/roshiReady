@@ -14,8 +14,8 @@ default_attributes(
 )
 
 run_list(
-Timezone
+#Timezone
   "recipe[timezone-ii]",
 #Nginx
-#  "recipe[nginx::nginx]",
+  "recipe[nginx-proxy]"
 )
